@@ -1,0 +1,75 @@
+/* Styles for Mobile Site */
+
+/* Header & Hero */
+header, #hero {
+    background-color: #003366; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #003366;
+}
+
+/* Projects */
+#projects {
+    background-color: #F8F8FF;
+    padding: 10px;
+}
+.project img {
+    width: 100%; 
+    height: auto;
+}
+.project .description {
+    color: #708090;
+}
+
+/* Reviews */
+#reviews {
+    background-color: #F8F8FF; 
+    padding: 10px;
+}
+.review {
+    border: 2px solid #B0C4DE; 
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review .name, .review .title, .review .rating, .review .content {
+    padding: 5px;
+    color: #708090; 
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Navy Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media state for Desktop site */
+@media (min-width: 1000px) {
+    /* ... other styles ... */
+
+    /* Projects */
+    #projects {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        align-items: start; 
+    }
+    .project {
+        flex: 0 1 calc(33.333% - 20px);
+        margin: 10px; 
+        box-sizing: border-box; 
+    }
+    .project img {
+        width: 100%; 
+        height: auto;
+        display: block; 
+    }
+    .project .description {
+        text-align: center; 
+    } 
+}
